@@ -20,8 +20,8 @@ namespace TaxCalc
         {
            
             sal -= sal * 0.15;
-
-            return sal;
+            Console.WriteLine($"The net salary is {sal + 1000}");
+            return 1;
         }
     }
 }

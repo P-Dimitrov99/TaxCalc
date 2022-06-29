@@ -24,9 +24,9 @@ namespace TaxCalc
             if (socCont.CheckRequirements(sal))
             {
                 socCont.CalculateTax(sal);
-                Console.WriteLine($"The net salary is: {sal}");
             }
-            Console.WriteLine($"The net salary is: {sal+1000}");
+            else Console.WriteLine($"The net salary is: {sal + 1000}");
+
             return 1;
         }
     }
