@@ -8,6 +8,7 @@ namespace TaxCalc
 {
     public class SocialContribution
     {
+        //here we check if the salary is lower than 3k
         public bool CheckRequirements(double sal)
         {
             if (sal <= 3000)
@@ -16,9 +17,9 @@ namespace TaxCalc
             }
             return false;
         }
+        //here we do the calculations for the social contributions
         public double CalculateTax(double sal)
-        {
-           
+        { 
             sal -= sal * 0.15;
             Console.WriteLine($"The net salary is {sal + 1000}");
             return 1;
