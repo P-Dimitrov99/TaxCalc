@@ -18,8 +18,9 @@ namespace TaxCalc
             if (incTax.CheckRequirements(salary))
             {
                 incTax.CalculateTax(salary);
-                
+
             }
+            else Console.WriteLine($"The net salary is: {salary}");
         }
     }
 }
